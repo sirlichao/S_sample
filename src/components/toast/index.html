@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--include "../../templet/head.components.html"-->
+
+<body>
+    <div id="demoCode">
+        <!-- 轻提示触发 - 开始 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a onclick="showText()" class="ryt-button"><span>Text toast</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a onclick="showImgText()" class="ryt-button"><span>Without mask</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a class="ryt-button"><span>Cumstom Icon</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a class="ryt-button"><span>Success toast</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a class="ryt-button"><span>Failed toast</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a class="ryt-button"><span>Network failure toast</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+            <!-- 轻提示触发按钮 - 开始 -->
+            <a class="ryt-button"><span>Loading toast</span></a>
+            <!-- 轻提示触发按钮 - 结束 -->
+        </div>
+        <!-- 轻提示触发 - 结束 -->
+        <!-- 轻提示样式示例 - 开始 -->
+        <div class="ryt-toast ryt-toast-nomask">
+            <div class="ryt-toast-notice">
+                <div class="ryt-toast-notice-content">
+                    <div class="ryt-toast-text">aaaaaaaa</div>
+                    <div class="ryt-toast-text">
+                        <div class="ryt-toast-text ryt-toast-text-icon"></div>
+                        <div>bbbbbbbbbb</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 轻提示样式示例 - 结束 -->
+    </div>
+    <!--include "../../templet/js.components.html"-->
+    <script type="text/javascript">
+        function showText() {
+            show(0);
+            setTimeout('hide(0)',1000);
+        }
+        function showImgText() {
+            show(1);
+            setTimeout('hide(1)',2000);
+        }
+        function show(num) {
+            $('.ryt-toast-text').eq(num).show();
+            $('.ryt-toast').attr('class','ryt-toast ryt-toast-mask');
+        }
+        function hide(num) {
+            $('.ryt-toast-text').eq(num).hide();
+            $('.ryt-toast').attr('class','ryt-toast ryt-toast-nomask');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--include "../../templet/head.components.html"-->
+
+<body>
+    <div id="demoCode">
+    	<!-- tag标签示例normal - 开始 -->
+        <div class="ryt-tag ryt-tag-normal">
+            <div class="ryt-tag-text">Basic</div>
+        </div>
+        <!-- tag标签示例normal - 结束 -->
+        <!-- tag标签示例active - 开始 -->
+        <div class="ryt-tag ryt-tag-active">
+            <div class="ryt-tag-text">Selected</div>
+        </div>
+        <!-- tag标签示例active - 结束 -->
+        <!-- tag标签示例disabled - 开始 -->
+        <div class="ryt-tag ryt-tag-disabled">
+            <div class="ryt-tag-text">Disabled</div>
+        </div>
+        <!-- tag标签示例disabled - 结束 -->
+        <!-- tag标签示例normal - 开始 -->
+        <div class="ryt-tag ryt-tag-normal">
+            <div class="ryt-tag-text">Callback</div>
+        </div>
+        <!-- tag标签示例normal - 结束 -->
+        <!-- tag标签示例closable - 开始 -->
+        <div class="ryt-tag ryt-tag-normal ryt-tag-closable">
+            <div class="ryt-tag-text">Closable</div>
+            <div class="ryt-tag-close" role="button">
+                <div class="ryt-icon ryt-icon-cross-circle ryt-icon-xs"></div>
+            </div>
+        </div>
+        <!-- tag标签示例closable - 结束 -->
+        <!-- tag标签示例normal,small - 开始 -->
+        <div class="ryt-tag ryt-tag-normal ryt-tag-small">
+            <div class="ryt-tag-text">Small and Readonly</div>
+        </div>
+        <!-- tag标签示例normal,small - 结束 -->
+	</div>
+    <!--include "../../templet/js.components.html"-->
+</body>
+<script type="text/javascript">
+	$('.tag-container').on('click', '.ryt-tag-close', function(e) {
+		$(e.currentTarget.parentNode).remove();
+	});
+	$('.tag-container').on('click', '.ryt-tag', function(e) {
+		var className = e.currentTarget.classList.value;
+		if(className.indexOf('active') >= 0){
+			e.currentTarget.classList.value = className.replace('active','normal');
+		}else if(className.indexOf('normal') >= 0){
+			e.currentTarget.classList.value = className.replace('normal','active');
+		}
+	});
+</script>
+</html>

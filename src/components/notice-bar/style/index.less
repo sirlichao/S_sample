@@ -1,0 +1,68 @@
+@import '../../style/themes/default';
+@import '../../style/mixins';
+
+@noticeBarPrefixCls: ryt-notice-bar;
+
+.@{noticeBarPrefixCls} {
+  background-color: @notice-bar-fill;
+  height: @notice-bar-height;
+  overflow: hidden;
+  font-size: @font-size-base;
+  line-height: @notice-bar-height;
+  color: @notice-bar-color;
+  display: flex;
+
+  &-marquee-wrap{
+    overflow: hidden;
+    .@{noticeBarPrefixCls}-marquee{
+      position: relative;
+      right: 0;
+      white-space: nowrap;
+      display: inline-block;
+      padding: 0px 7.5px;
+    }
+    .marquee1{
+      right: 219px;
+    }
+    .marquee2{
+      right: 367px;
+    }
+  }
+  &-content {
+    flex: 1;
+    width: 100%;
+    margin: auto @h-spacing-lg;
+    .ellipsis();
+  }
+
+  .@{noticeBarPrefixCls}-icon {
+    margin-left: @h-spacing-lg;
+    display: flex;
+    align-items: center;
+    .encoded-svg-background('error');
+    &-right{
+      .encoded-svg-background('right');
+    }
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    & + div {
+      margin-left: @h-spacing-sm;
+    }
+  }
+
+  &-operation {
+    display: flex;
+    align-items: center;
+    padding-right: @h-spacing-md;
+    .ryt-icon{
+      .encoded-svg-background('modal_delete');
+      &-right{
+        .encoded-svg-background('right');
+      }
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+    }
+  }
+}

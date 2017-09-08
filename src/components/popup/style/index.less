@@ -1,0 +1,73 @@
+@import '../../style/themes/default';
+@import '../../style/mixins';
+
+@PopupPrefixCls: ryt-popup;
+
+.@{PopupPrefixCls} {
+  position: fixed;
+  left: 0;
+
+  &-slide-down {
+    top: 0;
+  }
+
+  &-slide-up {
+    bottom: 0;
+  }
+
+  width: 100%;
+  background-color: @fill-base;
+  z-index: @popup-zindex;
+
+  &-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: @fill-mask;
+    height: 100%;
+    z-index: @popup-zindex;
+
+    &-hidden {
+      display: none;
+    }
+  }
+  // 隐藏掉 dialog 默认的 x 按钮
+  &-close {
+    display: none;
+  }
+}
+.@{PopupPrefixCls}-range{
+  display: none;
+}
+.image-delete{
+  position: absolute; 
+  right: 3px; 
+  top: -5px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: @font-size-heading;
+  cursor: pointer;
+}
+.popup-list .ryt-list-body {
+    height: 7.2rem;
+    overflow: auto;
+}
+.ryt-list-header{
+  div:first-child{
+    position: relative;
+  }
+}
+.popup-list + ul{
+  padding: 12px 19px;
+  list-style: none;
+  li{
+    margin-top: 12px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+

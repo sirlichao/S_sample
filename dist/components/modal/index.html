@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>componetnts</title>
+    <!-- 全局样式 -->
+    <link rel="stylesheet" type="text/css" href="../../style/common.css">
+    <!-- 组件样式 -->
+    <link rel="stylesheet" type="text/css" href="../../style/components.min.css">
+</head>
+
+<body>
+<div id="demoCode">
+    <!--自动检测平台对话框开始-->
+        <div style="display: none;">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">这是 title</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            这是内容...<br>
+                            这是内容...<br>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-v">
+                                <a class="ryt-modal-button" href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--自动检测平台对话框开始结束-->
+
+    <!--modal对话框（Android）开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent ryt-modal-android">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">这是 title</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            这是内容...<br>
+                            这是内容...<br>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-v" role="group">
+                                <a class="ryt-modal-button ryt-modal-button-sure" href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--modal对话框（Android）结束-->
+
+    <!--ios对话框开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">这是 title</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            这是内容...<br>
+                            这是内容...<br>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-v">
+                                <a class="ryt-modal-button" href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--ios对话框结束-->
+
+    <!--警告框开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">删除</div>
+                        </div>
+                        <div>
+                            <div>确定删除么???</div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-h">
+                                <a class="ryt-modal-button" href="#">取消</a>
+                                <a class="ryt-modal-button" href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--警告框结束-->
+
+    <!--弹出多个按钮的对话框开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">多个按钮情况</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            <div>
+                                <div>这里有好多个按钮, 你试试</div>
+                            </div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-v">
+                                <a class="ryt-modal-button" href="#">按钮一</a>
+                                <a class="ryt-modal-button" href="#">按钮二</a>
+                                <a class="ryt-modal-button" href="#">按钮三</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--弹出多个按钮的对话框结束-->
+
+    <!--按钮promise的开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">输入名字</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            <div>
+                                <div>
+                                    <label>这是名字的 message
+                                        <div>
+                                            <div class="ryt-modal-input">
+                                                <input type="text" placeholder="请输入你的名字">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-h">
+                                <a class="ryt-modal-button" href="#">取消</a>
+                                <a class="ryt-modal-button" href="#">提交</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--按钮promise的结束-->
+
+    <!--输入框默认值 开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">默认值</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            <div>
+                                <div>
+                                    <label>默认值 defaultValue 类型
+                                        <div>
+                                            <div class="ryt-modal-input">
+                                                <input type="text" placeholder="" value="100">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-h">
+                                <a class="ryt-modal-button" href="#">取消</a>
+                                <a class="ryt-modal-button" href="#">提交</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--输入框默认值 结束-->
+
+    <!--输入密码框 开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title" id="rcDialogTitle13">输入密码</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            <div>
+                                <div>
+                                    <label>
+                                        这是密码message,可以不要
+                                        <div>
+                                            <div class="ryt-modal-input">
+                                                <input type="password" placeholder="" value="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-h">
+                                <a class="ryt-modal-button" href="#">取消</a>
+                                <a class="ryt-modal-button"  href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--输入密码框 结束-->
+
+    <!--登录输入框 开始-->
+        <div>
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-header">
+                            <div class="ryt-modal-title">登录</div>
+                        </div>
+                        <div class="ryt-modal-body">
+                            <div>
+                                <div>
+                                    <label>
+                                        输入用户名和密码
+                                        <div>
+                                            <div class="ryt-modal-input">
+                                                <input type="text" placeholder="请输入用户名">
+                                            </div>
+                                            <div class="ryt-modal-input">
+                                                <input type="password" placeholder="请输入密码" value="">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-h">
+                                <a class="ryt-modal-button" href="#">取消</a>
+                                <a class="ryt-modal-button" href="#">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--登录输入框 结束-->
+
+    <!--操作按钮开始-->
+        <div style="display: none">
+            <div class="ryt-modal-mask"></div>
+            <div class="ryt-modal-wrap ">
+                <div class="ryt-modal ryt-modal-operation ryt-modal-transparent">
+                    <div class="ryt-modal-content">
+                        <div class="ryt-modal-body"></div>
+                        <div class="ryt-modal-footer">
+                            <div class="ryt-modal-button-group-v">
+                                <a class="ryt-modal-button" href="#">标为未读</a>
+                                <a class="ryt-modal-button" href="#">置顶聊天</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--操作按钮结束-->
+</div>
+
+<!--弹性适配脚本 -->
+<script type="text/javascript" src="../../js/flexible.js"></script>
+<script type="text/javascript" src="../../js/public/jquery.js"></script>
+</body>
+
+</html>

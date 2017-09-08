@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!--include "../../templet/head.components.html"-->
+
+<body>
+    <div id="demoCode">
+        <p>向下弹出效果</p>
+        <a class="ryt-button" onclick="showTop()">
+            <span>显示-向下弹出效果</span>
+        </a>
+        <p>向上弹出效果</p>
+        <a class="ryt-button" onclick="showBottom()">
+            <span>显示-向上弹出效果</span>
+        </a>
+        <!-- 向上弹出示例 - 开始 -->
+        <div class="ryt-popup-range ryt-popup-bottom-show">
+                <div class="ryt-popup-mask"></div>
+                <div class="ryt-popup-wrap">
+                    <div class="ryt-popup ryt-popup-slide-up">
+                        <div class="ryt-popup-content">
+                            <button class="ryt-popup-close"><span class="ryt-popup-close-x"></span></button>
+                            <div class="ryt-popup-body">
+                                <div>
+                                    <div class="ryt-list popup-list">
+                                        <div class="ryt-list-header">
+                                            <div>
+                                                委托买入
+                                                    <span class="image-delete" onclick="closeBottom()">X</span>
+                                            </div>
+                                        </div>
+                                        <div class="ryt-list-body">
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">股票名称</div>
+                                                </div>
+                                            </div>
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">股票代码</div>
+                                                </div>
+                                            </div>
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">买入价格</div>
+                                                </div>
+                                            </div>
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">买入数量</div>
+                                                </div>
+                                            </div>
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">更多</div>
+                                                </div>
+                                            </div>
+                                            <div class="ryt-list-item ryt-list-item-middle">
+                                                <div class="ryt-list-line">
+                                                    <div class="ryt-list-content">更多</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>投资说明投资说明...</li>
+                                        <li><a class="ryt-button ryt-button-primary"><span>买 入</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- 向上弹出示例 - 结束 -->
+        <!-- 向下弹出示例 - 开始 -->
+        <div class="ryt-popup-range ryt-popup-top-show">
+            <div onclick="clickMask()" class="ryt-popup-mask"></div>
+            <div class="ryt-popup-wrap">
+                <div class="ryt-popup ryt-popup-slide-down">
+                    <div class="ryt-popup-content">
+                        <button class="ryt-popup-close"><span class="ryt-popup-close-x"></span></button>
+                        <div class="ryt-popup-body">
+                            <div class="ryt-list">
+                                <div class="ryt-list-header">账户总览，选择了：</div>
+                                <div class="ryt-list-body">
+                                    <div class="ryt-list-item ryt-list-item-middle">
+                                        <div class="ryt-list-thumb"><img src="../../img/popup/image/1.png"></div>
+                                        <div class="ryt-list-line">
+                                            <div class="ryt-list-content">东吴证券</div>
+                                        </div>
+                                    </div>
+                                    <div class="ryt-list-item ryt-list-item-middle">
+                                        <div class="ryt-list-thumb"><img src="../../img/popup/image/2.png"></div>
+                                        <div class="ryt-list-line">
+                                            <div class="ryt-list-content">西吴证券</div>
+                                        </div>
+                                    </div>
+                                    <div class="ryt-list-item ryt-input-item">
+                                        <div class="ryt-input-label ryt-input-label-5">输入内容</div>
+                                        <div class="ryt-input-control">
+                                            <input type="text" value="" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 向下弹出示例 - 结束 -->
+    </div>
+    <!--include "../../templet/js.components.html"-->
+    <script type="text/javascript">
+        function showBottom(){
+            $('.ryt-popup-bottom-show').show();
+        }
+        function showTop(){
+            $('.ryt-popup-top-show').show();
+        }
+        function closeBottom(){
+            $('.ryt-popup-bottom-show').hide();
+        }
+        function clickMask(){
+            $('.ryt-popup-top-show').hide();
+        }
+    </script>
+</body>
+
+</html>

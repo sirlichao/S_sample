@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="pageInfo" id="pageInfo" title="ActionSheet 动作面板" content="从底部弹出的模态框，提供和当前场景相关的 2 个以上的操作动作，也支持提供标题和描述。内置固定的展示样式、不支持特别灵活的修改。">
+    <div style="display:none;">
+        <!DOCTYPE html>
+<html>
+<!--include "../../templet/head.components.html"-->
+
+<body>
+<div id="demoCode">
+
+    <!--带多行按钮的分享功能开始-->
+    <div>
+        <div class="ryt-action-sheet-mask"></div>
+        <div class="ryt-action-sheet-wrap">
+            <div class="ryt-action-sheet my-action-sheet ryt-action-sheet-share">
+                <div class="ryt-action-sheet-content">
+                    <button class="ryt-action-sheet-close">
+                        <span class="ryt-action-sheet-close-x"></span>
+                    </button>
+                    <div class="ryt-action-sheet-body">
+                        <div>
+                            <div class="ryt-action-sheet-message">我是描述我是描述</div>
+                            <div class="ryt-action-sheet-share">
+                                <div class="ryt-action-sheet-share-list">
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <img src="https://zos.alipayobjects.com/rmsportal/WmEzpOsElbbvgmrexFSH.png" alt="icon">
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            发送给朋友
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <img src="https://zos.alipayobjects.com/rmsportal/HssPJKvrjEByyVWJIFwl.png" alt="icon">
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            新浪微博
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <img src="https://zos.alipayobjects.com/rmsportal/HCGowLrLFMFglxRAKjWd.png" alt="icon">
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            生活圈
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <img src="https://zos.alipayobjects.com/rmsportal/LeZNKxCTkLHDWsjFfqqn.png" alt="icon">
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            微信好友
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <img src="https://zos.alipayobjects.com/rmsportal/YHHFcpGxlvQIqCAvZdbw.png" alt="icon">
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            QQ
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-refresh ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#refresh"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            刷新
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-link ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#link"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            链接
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-complaints ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#complaints"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            投诉
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ryt-action-sheet-share-list">
+                                    <div class="ryt-action-sheet-share-list-item" role="button">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-refresh ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#refresh"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            刷新
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-link ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#link"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            链接
+                                        </div>
+                                    </div>
+                                    <div class="ryt-action-sheet-share-list-item">
+                                        <div class="ryt-action-sheet-share-list-item-icon">
+                                            <svg class="ryt-icon ryt-icon-complaints ryt-icon-md">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="#complaints"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="ryt-action-sheet-share-list-item-title">
+                                            投诉
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ryt-action-sheet-share-cancel-button">
+                                    取消
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--带多行按钮的分享功能结束-->
+
+</div>
+
+
+
+<!--include "../../templet/js.components.html"-->
+</body>
+
+</html>
+    </div>
+    <meta charset="UTF-8">
+<title>sample</title>
+<meta name="format-detection" content="telephone=no" />
+<!-- 代码显示样式 -->
+<link rel="stylesheet" type="text/css" href="../../style/sample/prettify.css">
+<!-- DEMO结构样式 -->
+<link rel="stylesheet" type="text/css" href="../../style/sample/sample.css">
+</head>
+
+<body onload="prettyPrint()">
+    <div class="demo-box">
+        <div class="demo-box-left">
+            <div class="demo-title">
+                <a href="/">移动平台H5前端UI库</a>
+            </div>
+            <div class="demo-menu">
+                <div class="demo-menu-one">
+                    <span>布局</span>
+                    <i></i>
+                </div>
+                <ul>
+                    <li><a href="../../components/flex/sample.html"><i></i><span>Flex布局</span></a></li>
+                    <li><a href="../../components/wing-blank/sample.html">WingBlank 两翼留白</a></li>
+                    <li><a href="../../components/white-space/sample.html">WhiteSpace 上下留白</a></li>
+                </ul>
+                <div class="demo-menu-one">
+                    <span>导航</span>
+                    <i></i>
+                </div>
+                <ul>
+                    <li><a href="../../components/navbar/sample.html">NavBar 导航栏</a></li>
+                    <li><a href="../../components/tabs/sample.html">Tabs 标签页</a></li>
+                    <li><a href="../../components/tab-bar/sample.html">TabBar 标签栏</a></li>
+                </ul>
+                <div class="demo-menu-one">
+                    <span>录入</span>
+                    <i></i>
+                </div>
+                <ul>
+                    <li><a href="../../components/action-sheet/sample.html">ActionSheet 动作面板</a></li>
+                    <li><a href="../../components/action-sheet2/sample.html">ActionSheet2 动作面板</a></li>
+                    <li><a href="../../components/action-sheet3/sample.html">ActionSheet3 动作面板</a></li>
+                    <li><a href="../../components/agreement/sample.html">Agreement 同意协议</a></li>
+                    <li><a href="../../components/button/sample.html">Button 按钮</a></li>
+                    <li><a href="../../components/checkbox/sample.html">CheckBox 复选框</a></li>
+                    <li><a href="../../components/icon/sample.html">Icon 图标</a></li>
+                    <li><a href="../../components/input-item/sample.html">InputItem 文本输入</a></li>
+                    <li><a href="../../components/list/sample.html">List 列表</a></li>
+                    <li><a href="../../components/modal/sample.html">Modal 对话框</a></li>
+                    <li><a href="../../components/notice-bar/sample.html">NoticeBar 通告栏</a></li>
+                    <li><a href="../../components/picker/sample.html">Picker 选择器</a></li>
+                    <li><a href="../../components/popup/sample.html">Popup 弹出层</a></li>
+                    <li><a href="../../components/progress/sample.html">Progress 进度条</a></li>
+                    <li><a href="../../components/radio/sample.html">Radio 单选框</a></li>
+                    <li><a href="../../components/range/sample.html">Range 区域选择</a></li>
+                    <li><a href="../../components/result/sample.html">Result 结果页</a></li>
+                    <li><a href="../../components/search-bar/sample.html">SearchBar 搜索栏</a></li>
+                    <li><a href="../../components/segmented-control/sample.html">SegmentedControl 分段器</a></li>
+                    <li><a href="../../components/steps/sample.html">Steps 步骤条</a></li>
+                    <li><a href="../../components/switch/sample.html">Switch 滑动开关</a></li>
+                    <li><a href="../../components/tag/sample.html">Tag 标签</a></li>
+                    <li><a href="../../components/toast/sample.html">Toast 轻提示</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="demo-box-right">
+            <div class="demo-box-right-box">
+                <div class="demo-explain">
+                    <div class="demo-explain-text">
+                        <h3 id="titleName">按钮</h3>
+                        <div>
+                            <p><span class="title">说明：</span><span id="pageinfoContent">btn</span></p>
+                        </div>
+                        <code class="demo-explain-text-code">
+                            <pre id="codeExplain" class="prettyprint"></pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="demo-sample">
+                    <div class="demo-sample-title">演示示例</div>
+                    <iframe id="demoFrame" name="demoFrame" title="mobile" src="index.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../../js/public/jquery.js"></script>
+    <!-- 代码展示脚本文件 -->
+    <script type="text/javascript" src="../../js/sample/prettify.js"></script>
+    <!-- 自定义脚本文件 -->
+    <script type="text/javascript" src="../../js/sample/sample.js"></script>
+    <script type="text/javascript">
+    var pageinfo = document.getElementById("pageInfo");
+    var pageinfoTitle = pageinfo.title;
+    var pageinfoContent = pageinfo.content;
+    $('#titleName').html(pageinfoTitle);
+    $('#pageinfoContent').html(pageinfoContent);
+    </script>
+</body>
+
+</html>
